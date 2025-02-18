@@ -1,5 +1,5 @@
 {
-  "Version": 79,
+  "Version": 80,
   "ExpressionProfiles": [
     {
       "Type": "Enzyme",
@@ -57611,13 +57611,20 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Mikkelson (1986) - (E)-clomiphene, 21 mg, po, sd|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Mikkelson (1986) - (E)-clomiphene"
+        }
       ],
       "Individual": "Mikkelson (1986)",
       "Compounds": [
@@ -57835,7 +57842,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -57860,6 +57867,28 @@
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=1) - (E)-clomiphene, 42 mg, po, sd, n=2|Organism|PeripheralVenousBlood|(E)-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=1), (E)-N-desethylclomiphene, ID=9001"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=1) - (E)-clomiphene, 42 mg, po, sd, n=2|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=1), (E)-clomiphene, ID=1"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=1) - (E)-clomiphene, 42 mg, po, sd, n=2|Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=1), (E)-4-hydroxy-N-desethylclomiphene, ID=17001"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=1) - (E)-clomiphene, 42 mg, po, sd, n=2|Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=1), (E)-4-hydroxyclomiphene, ID=5001"
+        }
       ],
       "Individual": "IKP, n=2 (AS=1)",
       "Compounds": [
@@ -58149,6 +58178,7 @@
             },
             {
               "Unit": "",
+              "Dimension": "Dimensionless",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -58326,7 +58356,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -58351,6 +58381,28 @@
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=2) - (E)-clomiphene, 42 mg, po, sd, n=3|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=2), (E)-clomiphene, ID=2"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=2) - (E)-clomiphene, 42 mg, po, sd, n=3|Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=2), (E)-4-hydroxy-N-desethylclomiphene, ID=17002"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=2) - (E)-clomiphene, 42 mg, po, sd, n=3|Organism|PeripheralVenousBlood|(E)-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=2), (E)-N-desethylclomiphene, ID=9002"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=2) - (E)-clomiphene, 42 mg, po, sd, n=3|Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=2), (E)-4-hydroxyclomiphene, ID=5002"
+        }
       ],
       "Individual": "IKP, n=3 (AS=2)",
       "Compounds": [
@@ -58640,6 +58692,7 @@
             },
             {
               "Unit": "",
+              "Dimension": "Dimensionless",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -58817,7 +58870,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -58842,6 +58895,28 @@
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0.5) - (E)-clomiphene, 42 mg, po, sd, n=4|Organism|PeripheralVenousBlood|(E)-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0.5), (E)-N-desethylclomiphene, ID=9003"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0.5) - (E)-clomiphene, 42 mg, po, sd, n=4|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0.5), (E)-clomiphene, ID=3"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0.5) - (E)-clomiphene, 42 mg, po, sd, n=4|Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0.5), (E)-4-hydroxy-N-desethylclomiphene, ID=17003"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0.5) - (E)-clomiphene, 42 mg, po, sd, n=4|Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0.5), (E)-4-hydroxyclomiphene, ID=5003"
+        }
       ],
       "Individual": "IKP, n=4 (AS=0.5)",
       "Compounds": [
@@ -59131,6 +59206,7 @@
             },
             {
               "Unit": "",
+              "Dimension": "Dimensionless",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -59308,7 +59384,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -59333,6 +59409,28 @@
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0.75) - (E)-clomiphene, 42 mg, po, sd, n=1|Organism|PeripheralVenousBlood|(E)-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0.75), (E)-N-desethylclomiphene, ID=9005"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0.75) - (E)-clomiphene, 42 mg, po, sd, n=1|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0.75), (E)-clomiphene, ID=5"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0.75) - (E)-clomiphene, 42 mg, po, sd, n=1|Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0.75), (E)-4-hydroxy-N-desethylclomiphene, ID=17005"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0.75) - (E)-clomiphene, 42 mg, po, sd, n=1|Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0.75), (E)-4-hydroxyclomiphene, ID=5005"
+        }
       ],
       "Individual": "IKP, n=1 (AS=0.75)",
       "Compounds": [
@@ -59622,6 +59720,7 @@
             },
             {
               "Unit": "",
+              "Dimension": "Dimensionless",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -59799,7 +59898,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -59824,6 +59923,28 @@
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0) - (E)-clomiphene, 42 mg, po, sd, n=6|Organism|PeripheralVenousBlood|(E)-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0), (E)-N-desethylclomiphene, ID=9004"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0) - (E)-clomiphene, 42 mg, po, sd, n=6|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0), (E)-clomiphene, ID=4"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0) - (E)-clomiphene, 42 mg, po, sd, n=6|Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0), (E)-4-hydroxy-Ndesethylclomiphene, ID=17004"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=0) - (E)-clomiphene, 42 mg, po, sd, n=6|Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=0), (E)-4-hydroxyclomiphene, ID=5004"
+        }
       ],
       "Individual": "IKP, n=6 (AS=0)",
       "Compounds": [
@@ -60113,6 +60234,7 @@
             },
             {
               "Unit": "",
+              "Dimension": "Dimensionless",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -60290,7 +60412,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 42 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -60315,6 +60437,28 @@
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=3) - (E)-clomiphene, 42 mg, po, sd, n=3|Organism|PeripheralVenousBlood|(E)-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=3), (E)-N-desethylclomiphene, ID=9006"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=3) - (E)-clomiphene, 42 mg, po, sd, n=3|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=3), (E)-clomiphene, ID=6"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=3) - (E)-clomiphene, 42 mg, po, sd, n=3|Organism|PeripheralVenousBlood|(E)-4-hydroxy-N-desethylclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=3), (E)-4-hydroxy-N-desethylclomiphene, ID=17006"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IKP (AS=3) - (E)-clomiphene, 42 mg, po, sd, n=3|Organism|PeripheralVenousBlood|(E)-4-hydroxyclomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "IKP (AS=3), (E)-4-hydroxyclomiphene, ID=5006"
+        }
       ],
       "Individual": "IKP, n=3 (AS=3)",
       "Compounds": [
@@ -60604,6 +60748,7 @@
             },
             {
               "Unit": "",
+              "Dimension": "Dimensionless",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -60769,158 +60914,165 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_13|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_14|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_15|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_15|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_16|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_16|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_17|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_17|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_18|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_18|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_19|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_19|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_20|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_20|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_21|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_21|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_22|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_22|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_23|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_23|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_24|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_24|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_25|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_25|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_26|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_26|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_27|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_27|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_28|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_28|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_29|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_29|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_30|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_30|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po q.d. 30 days|(E)-clomiphene USP dissolution (weibull)|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Miller (2018) - (E)-clomiphene, 21 mg, po, md, n=12|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Miller (2018) - (E)-clomiphene"
+        }
       ],
       "Individual": "Miller (2018)",
       "Compounds": [
@@ -61028,6 +61180,7 @@
             },
             {
               "Unit": "",
+              "Dimension": "Dimensionless",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -61145,223 +61298,230 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_13|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_14|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_15|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_15|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_16|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_16|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_17|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_17|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_18|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_18|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_19|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_19|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_20|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_20|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_21|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_21|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_22|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_22|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_23|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_23|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_24|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_24|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_25|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_25|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_26|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_26|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_27|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_27|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_28|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_28|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_29|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_29|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_30|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_30|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_31|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_31|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_32|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_32|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_33|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_33|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_34|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_34|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_35|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_35|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_36|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_36|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_37|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_37|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_38|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_38|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_39|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_39|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_40|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_40|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_41|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_41|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_42|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_42|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_43|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_43|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 12.5 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Wiehle (2013) - (E)-clomiphene, 12.5 mg, po, md, n=14|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wiehle 12.5 mg (2013) - (E)-clomiphene"
+        }
       ],
       "Individual": "Wiehle (2013)",
       "Compounds": [
@@ -61568,223 +61728,230 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_13|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_14|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_15|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_15|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_16|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_16|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_17|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_17|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_18|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_18|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_19|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_19|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_20|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_20|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_21|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_21|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_22|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_22|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_23|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_23|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_24|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_24|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_25|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_25|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_26|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_26|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_27|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_27|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_28|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_28|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_29|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_29|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_30|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_30|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_31|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_31|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_32|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_32|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_33|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_33|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_34|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_34|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_35|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_35|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_36|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_36|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_37|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_37|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_38|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_38|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_39|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_39|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_40|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_40|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_41|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_41|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_42|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_42|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_43|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_43|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Wiehle (2013) - (E)-clomiphene, 25 mg, po, md, n=16|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wiehle 25 mg (2013) - (E)-clomiphene"
+        }
       ],
       "Individual": "Wiehle (2013)",
       "Compounds": [
@@ -61991,223 +62158,230 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_13|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_14|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_15|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_15|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_16|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_16|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_17|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_17|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_18|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_18|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_19|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_19|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_20|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_20|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_21|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_21|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_22|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_22|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_23|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_23|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_24|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_24|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_25|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_25|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_26|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_26|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_27|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_27|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_28|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_28|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_29|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_29|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_30|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_30|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_31|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_31|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_32|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_32|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_33|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_33|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_34|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_34|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_35|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_35|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_36|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_36|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_37|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_37|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_38|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_38|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_39|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_39|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_40|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_40|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_41|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_41|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_42|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_42|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_43|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_43|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 6.25 mg po q.d. 43 days|(E)-clomiphene USP dissolution (weibull)|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Wiehle (2013) - (E)-clomiphene, 6.25 mg, po, md, n=16|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wiehle 6.25 mg (2013) - (E)-clomiphene"
+        }
       ],
       "Individual": "Wiehle (2013)",
       "Compounds": [
@@ -62414,13 +62588,20 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|(E)-clomiphene 21 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|(E)-clomiphene 21 mg po sd|(E)-clomiphene USP dissolution (weibull)|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Ratiopharm (1991) - (E)-clomiphene, 21 mg, po, sd|Organism|PeripheralVenousBlood|(E)-clomiphene|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Ratiopharm (1991) - (E)-clomiphene"
+        }
       ],
       "Individual": "Ratiopharm (1991)",
       "Compounds": [
@@ -65804,20 +65985,20 @@
         {
           "Name": "(E)-clomiphene",
           "Classifiables": [
-            "IKP (AS=1), (E)-clomiphene, ID=1",
-            "IKP (AS=2), (E)-clomiphene, ID=2",
-            "IKP (AS=0.5), (E)-clomiphene, ID=3",
-            "IKP (AS=0), (E)-clomiphene, ID=4",
             "IKP (AS=3), (E)-clomiphene, ID=6",
+            "IKP (AS=0), (E)-clomiphene, ID=4",
+            "IKP (AS=0.5), (E)-clomiphene, ID=3",
+            "IKP (AS=2), (E)-clomiphene, ID=2",
+            "IKP (AS=1), (E)-clomiphene, ID=1",
             "IKP (AS=0.75), (E)-clomiphene, ID=5"
           ]
         },
         {
           "Name": "(E)-4-hydroxyclomiphene",
           "Classifiables": [
-            "IKP (AS=1), (E)-4-hydroxyclomiphene, ID=5001",
-            "IKP (AS=2), (E)-4-hydroxyclomiphene, ID=5002",
             "IKP (AS=0.5), (E)-4-hydroxyclomiphene, ID=5003",
+            "IKP (AS=2), (E)-4-hydroxyclomiphene, ID=5002",
+            "IKP (AS=1), (E)-4-hydroxyclomiphene, ID=5001",
             "IKP (AS=0), (E)-4-hydroxyclomiphene, ID=5004",
             "IKP (AS=3), (E)-4-hydroxyclomiphene, ID=5006",
             "IKP (AS=0.75), (E)-4-hydroxyclomiphene, ID=5005"
@@ -65826,21 +66007,21 @@
         {
           "Name": "(E)-4-hydroxy-N-desethylclomiphene",
           "Classifiables": [
-            "IKP (AS=1), (E)-4-hydroxy-N-desethylclomiphene, ID=17001",
-            "IKP (AS=2), (E)-4-hydroxy-N-desethylclomiphene, ID=17002",
-            "IKP (AS=0.5), (E)-4-hydroxy-N-desethylclomiphene, ID=17003",
-            "IKP (AS=0), (E)-4-hydroxy-Ndesethylclomiphene, ID=17004",
             "IKP (AS=3), (E)-4-hydroxy-N-desethylclomiphene, ID=17006",
+            "IKP (AS=0), (E)-4-hydroxy-Ndesethylclomiphene, ID=17004",
+            "IKP (AS=0.5), (E)-4-hydroxy-N-desethylclomiphene, ID=17003",
+            "IKP (AS=2), (E)-4-hydroxy-N-desethylclomiphene, ID=17002",
+            "IKP (AS=1), (E)-4-hydroxy-N-desethylclomiphene, ID=17001",
             "IKP (AS=0.75), (E)-4-hydroxy-N-desethylclomiphene, ID=17005"
           ]
         },
         {
           "Name": "(E)-N-desethylclomiphene",
           "Classifiables": [
-            "IKP (AS=1), (E)-N-desethylclomiphene, ID=9001",
-            "IKP (AS=2), (E)-N-desethylclomiphene, ID=9002",
-            "IKP (AS=0.5), (E)-N-desethylclomiphene, ID=9003",
             "IKP (AS=0), (E)-N-desethylclomiphene, ID=9004",
+            "IKP (AS=0.5), (E)-N-desethylclomiphene, ID=9003",
+            "IKP (AS=2), (E)-N-desethylclomiphene, ID=9002",
+            "IKP (AS=1), (E)-N-desethylclomiphene, ID=9001",
             "IKP (AS=3), (E)-N-desethylclomiphene, ID=9006",
             "IKP (AS=0.75), (E)-N-desethylclomiphene, ID=9005"
           ]

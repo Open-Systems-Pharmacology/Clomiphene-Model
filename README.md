@@ -7,7 +7,7 @@ Within this repository, we distribute a whole-body parent-metabolite PBPK model 
 For further details, quantitative model evaluation and extensive documentation please refer to [[1]](https://doi.org/10.3390/pharmaceutics14122604).
 
 # Version information
-Published in PK-Sim Version 9.1 and migrated to PK-Sim Version 11.2 without changes.
+Published in PK-Sim Version 9.1 and migrated to PK-Sim Version 12 without changes.
 
 # License
 The model is distributed under the GPLv2 License.
